@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
+    <title>Book My Show</title>
     <link rel="stylesheet" href="{% static 'myshow/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'myshow/fonts/material-icon/css/material-design-iconic-font.min.css' %}">
 </head>
@@ -16,6 +16,14 @@
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">Sign up</h2>
+                        {% if error == "Invalid Credentials" %}
+                                    <div class="text-center">
+                                        <div class="alert alert-danger" role="alert">
+                                            Username is already taken please try another one
+                                        </div>
+                                    <br>
+                                    </div>
+                                    {% endif %}
                         <form method="POST" class="register-form" id="register-form">
                             {% csrf_token %}
                             <div class="form-group">
