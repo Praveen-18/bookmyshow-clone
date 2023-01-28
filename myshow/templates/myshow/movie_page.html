@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <title>nice</title>
 </head>
 <body>
-<h1>{{ movie_name }}</h1>
+<img src="{% static movie_path %}" alt="img">
 
 </body>
 </html>

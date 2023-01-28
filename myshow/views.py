@@ -7,20 +7,21 @@ from django.contrib.auth import authenticate, login, logout
 def index(request):
     return render(request, 'myshow/index.html')
 
-def movie_page(request,movie_name):
-    print(movie_name)
-    return render(request,'myshow/movie_page.html',{'movie_name':movie_name})
+def movie_page(request,movie_number):
 
-def login(request):
+    print(movie_number)
+    ini_path="myshow/images/recommendedMovies/image"+movie_number+".png"
+    return render(request,'myshow/movie_page.html',{'movie_path':ini_path})
+
+def login_user(request):
     if request.method == 'POST':
         email = request.POST.get('email')
         password = request.POST.get('password')
         print(email, password)
-        curr_user = authenticate(email = email, password=password)
-        print(curr_user)
+        curr_user = authenticate(username=email, password=password)
         if curr_user is not None:
-            login(request, curr_user)
-            return redirect('/index')
+            login(request,curr_user)
+            return redirect('/')
         else:
             return render(request, 'myshow/login.html', {'error': 'Invalid Credentials'})
     else:
