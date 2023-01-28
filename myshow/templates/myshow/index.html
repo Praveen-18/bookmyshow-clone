@@ -33,40 +33,45 @@
     </div>
 </div>
 <br>
-    <h5>Recommended Movies</h5>
-<div id="carouselExample" class="carousel slide" style="margin: auto">
+    <section class="recommend">
+    <h3 style="margin-left: 10px">Recommended Movies</h3>
+<div id="carouselExample" class="carousel slide">
     <div class="carousel-inner" >
         <div class="carousel-item active" >
             <div class="card-group" >
-                <div class="card" style="border: none">
+
+                <div class="card movies" style="border: none;border-radius: 10px;overflow: hidden;">
                     <img src="{% static 'myshow/images/recommendedMovies/img.png' %}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
-                <div class="card" style="border: none">
+
+                <div class="card movies" style="border: none;border-radius: 10px;;overflow: hidden;">
+                    <a href="{% url 'movie_page' 'Card_title' %}">
+                    <img src="{% static 'myshow/images/recommendedMovies/img.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                    </a>
+                </div>
+                <div class="card movies" style="border: none;border-radius: 10px;;overflow: hidden;">
                     <img src="{% static 'myshow/images/recommendedMovies/img.png' %}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
-                <div class="card" style="border: none">
+                <div class="card movies" style="border: none;border-radius: 10px;;overflow: hidden;">
                     <img src="{% static 'myshow/images/recommendedMovies/img.png' %}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
-                <div class="card" style="border: none">
-                    <img src="{% static 'myshow/images/recommendedMovies/img.png' %}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
-                <div class="card" style="border: none">
+                <div class="card movies" style="border: none;border-radius: 10px;;overflow: hidden;">
                     <img src="{% static 'myshow/images/recommendedMovies/img.png' %}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -77,35 +82,35 @@
         </div>
         <div class="carousel-item">
             <div class="card-group">
-                <div class="card" style="border: none">
+                <div class="card movies" style="border: none;border-radius: 10px;;overflow: hidden;">
                     <img src="{% static 'myshow/images/recommendedMovies/img.png' %}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
-                <div class="card" style="border: none">
+                <div class="card movies" style="border: none;border-radius: 10px;;overflow: hidden;">
                     <img src="{% static 'myshow/images/recommendedMovies/img.png' %}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
-                <div class="card" style="border: none">
+                <div class="card movies" style="border: none;border-radius: 10px;;overflow: hidden;">
                     <img src="{% static 'myshow/images/recommendedMovies/img.png' %}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
-                <div class="card" style="border: none">
+                <div class="card movies" style="border: none;border-radius: 10px;;overflow: hidden;">
                     <img src="{% static 'myshow/images/recommendedMovies/img.png' %}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
-                <div class="card" style="border: none">
+                <div class="card movies" style="border: none;border-radius: 10px;overflow: hidden;">
                     <img src="{% static 'myshow/images/recommendedMovies/img.png' %}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -122,10 +127,68 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div>
-    <br>
-    <img src="{% static 'myshow/images/carousel/banner.avif' %}" style="width: 90%  ; margin-left: 50px">
 
     <br>
+    <img src="{% static 'myshow/images/carousel/banner.avif' %}" style="width: 100%">
+
+    <br>
+
+    </section>
+        <br>
+    <section style="width: 100%;background: rgb(43, 49, 72)">
+        <div style="margin: 0px 10%;">
+            <img src="{% static 'myshow/images/logo/img.png' %}" alt="img" style="width: 100%">
+        </div>
+        <section>
+                <section class="recommend">
+    <h3 style="margin-left: 10px;color: white;">Premiere Movies </h3>
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner" >
+        <div class="carousel-item active">
+            <div class="card-group" >
+                <div class="card movies" style="border: none;border-radius: 10px;overflow: hidden;color: white;background: none;">
+                    <img src="{% static 'myshow/images/recommendedMovies/img.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                </div>
+                <div class="card movies" style="border: none;border-radius: 10px;overflow: hidden;color: white;background: none;">
+                    <img src="{% static 'myshow/images/recommendedMovies/img.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                </div>
+                <div class="card movies" style="border: none;border-radius: 10px;;overflow: hidden;color: white;background: none;">
+                    <img src="{% static 'myshow/images/recommendedMovies/img.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                </div>
+                <div class="card movies" style="border: none;border-radius: 10px;;overflow: hidden;color: white;background: none;">
+                    <img src="{% static 'myshow/images/recommendedMovies/img.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                </div>
+                <div class="card movies" style="border: none;border-radius: 10px;;overflow: hidden;color: white;background: none;">
+                    <img src="{% static 'myshow/images/recommendedMovies/img.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </section>
+    </section>
+
+
 
 
 

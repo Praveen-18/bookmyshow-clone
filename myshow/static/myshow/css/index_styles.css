@@ -1,0 +1,12 @@
+.movies{
+    margin: 20px;
+
+}
+.recommend{
+    margin: 0px 10%;
+}
+@media only screen and (max-width: 850px) {
+    .recommend{
+        margin: 0px 2%;
+    }
+}
