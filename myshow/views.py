@@ -8,3 +8,9 @@ def index(request):
 def movie_page(request,movie_name):
     print(movie_name)
     return render(request,'myshow/movie_page.html',{'movie_name':movie_name})
+
+def login(request):
+    return render(request , 'myshow/login.html')
+
+def regsiter(request):
+    return render(request , 'myshow/register.html')
